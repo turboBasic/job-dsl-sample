@@ -30,7 +30,7 @@ class JobScriptsSpec extends Specification {
 
         where:
         file << new FileNameFinder()
-            .getFileNames('jobs', '**/*.groovy')
+            .getFileNames('src/jobs', '**/*.groovy')
             .collect { new File(it) }
     }
 }

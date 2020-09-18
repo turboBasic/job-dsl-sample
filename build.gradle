@@ -3,7 +3,7 @@ apply plugin: 'groovy'
 sourceSets {
     jobs {
         groovy {
-            srcDirs 'jobs'
+            srcDirs 'src/jobs'
             compileClasspath += main.compileClasspath
         }
         compileClasspath += sourceSets.main.output
