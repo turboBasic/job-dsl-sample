@@ -1,0 +1,52 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+
+[*]
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+
+[*.{js,html,md,ps1,py,txt}]
+# Set default charset
+charset = utf-8
+
+[{.gitignore,.gitconfig,.gitattributes,**/.git/ignore,**/.git/config,**/.git/attributes,**/.git/info/exclude}]
+indent_style = tab
+
+[{.gitattributes,**/.git/attributes}]
+indent_size = 8
+
+
+[*.py]
+# 4 space indentation
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.groovy]
+indent_size = 4
+
+[*.json]
+insert_final_newline = ignore
+indent_style = space
+
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+
+[Jenkinsfile]
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+indent_size = 8
+[*.md]
+trim_trailing_whitespace = false
