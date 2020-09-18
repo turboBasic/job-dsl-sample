@@ -1,4 +1,4 @@
-package io.unguiculus.jobdsl
+package com.dslexample
 
 import groovy.util.FileNameFinder
 import javaposse.jobdsl.dsl.DslScriptLoader

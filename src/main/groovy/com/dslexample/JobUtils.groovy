@@ -1,4 +1,4 @@
-package io.unguiculus.jobdsl
+package com.dslexample
 
 import javaposse.jobdsl.dsl.Job
 

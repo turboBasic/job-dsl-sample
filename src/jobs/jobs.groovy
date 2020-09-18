@@ -1,5 +1,5 @@
-import static io.unguiculus.jobdsl.JobUtils.addDefaults
-import static io.unguiculus.jobdsl.JobUtils.addTimestampsWrapper
+import static com.dslexample.JobUtils.addDefaults
+import static com.dslexample.JobUtils.addTimestampsWrapper
 
 folderName = 'myjobs'
 
