@@ -3,7 +3,7 @@
 
 job('seed') {
     scm {
-        github 'sheehan/job-dsl-gradle-example'
+        github 'turboBasic/job-dsl-sample'
     }
     triggers {
         scm 'H/5 * * * *'
