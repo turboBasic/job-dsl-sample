@@ -20,6 +20,7 @@ class JenkinsFileJobManagement extends JenkinsJobManagement {
     @Override
     public boolean createOrUpdateConfig(Item dslItem, boolean ignoreExisting)
             throws NameNotProvidedException {
+
         super.createOrUpdateConfig(dslItem, ignoreExisting)
 
         String path = dslItem.getName()
