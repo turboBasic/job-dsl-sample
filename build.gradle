@@ -34,18 +34,19 @@ configurations {
 }
 
 dependencies {
-    compile "org.jenkins-ci.plugins:job-dsl-core:${jobDslVersion}"
-    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    // implementation 'org.codehaus.groovy:groovy-all:2.4.15'
+    implementation "org.jenkins-ci.plugins:job-dsl-core:${jobDslVersion}"
+    testImplementation "org.spockframework:spock-core:1.1-groovy-2.4"
 
     // Jenkins test harness dependencies
-    testCompile 'org.jenkins-ci.main:jenkins-test-harness:2.33'
-    testCompile "org.jenkins-ci.main:jenkins-war:${jenkinsVersion}"
+    testImplementation 'org.jenkins-ci.main:jenkins-test-harness:2.33'
+    testImplementation "org.jenkins-ci.main:jenkins-war:${jenkinsVersion}"
 
     // Job DSL plugin including plugin dependencies
-    testCompile "org.jenkins-ci.plugins:job-dsl:${jobDslVersion}"
-    testCompile "org.jenkins-ci.plugins:job-dsl:${jobDslVersion}@jar"
-    testCompile 'org.jenkins-ci.plugins:structs:1.19@jar'
-    testCompile 'org.jenkins-ci.plugins:script-security:1.54@jar'
+    testImplementation "org.jenkins-ci.plugins:job-dsl:${jobDslVersion}"
+    testImplementation "org.jenkins-ci.plugins:job-dsl:${jobDslVersion}@jar"
+    testImplementation 'org.jenkins-ci.plugins:structs:1.19@jar'
+    testImplementation 'org.jenkins-ci.plugins:script-security:1.54@jar'
 
     /*
         plugins to install in test instance

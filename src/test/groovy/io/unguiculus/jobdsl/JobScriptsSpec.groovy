@@ -29,7 +29,9 @@ class JobScriptsSpec extends Specification {
         noExceptionThrown()
 
         where:
-        file << new FileNameFinder().getFileNames('jobs', '**/*.groovy').collect { new File(it) }
+        file << new FileNameFinder()
+            .getFileNames('jobs', '**/*.groovy')
+            .collect { new File(it) }
     }
 }
 
